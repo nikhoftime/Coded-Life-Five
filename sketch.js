@@ -36,11 +36,6 @@ function draw() {
   imageMode(CENTER);
   image(qr_Reset, width /20, height *0.6, qrSize/2, qrSize/2);
 
-  textAlign(CENTER, CENTER);
-  textSize(32);
-  fill(0); 
-  textFont('Alumni Sans SC');
-  text("Reset", width *0.05, height *0.4);
   //first row yo
   if (!qr1Scanned) image(qr1, width * 0.20, height * 0.3, qrSize, qrSize);
   
