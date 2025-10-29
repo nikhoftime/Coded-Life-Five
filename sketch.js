@@ -34,7 +34,7 @@ function setup() {
 function draw() {
   background('#ffffff');
   imageMode(CENTER);
- 
+  image(qr_Reset, width *0.1, height *0.5, qrSize/2, qrSize/2);
   //first row yo
   if (!qr1Scanned) image(qr1, width * 0.20, height * 0.3, qrSize, qrSize);
   
