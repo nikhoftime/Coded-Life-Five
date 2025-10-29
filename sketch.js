@@ -1,4 +1,4 @@
-let qr1, qr2, qr3, qr4, qr5, qr6, qr7, qr8,  qr_Correct;
+let qr1, qr2, qr3, qr4, qr5, qr6, qr7, qr8, qr_Correct;
 let counter = 0
 let qr1Scanned = false,
     qr2Scanned = false,
