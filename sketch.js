@@ -126,14 +126,14 @@ function codeScanned(text) {
       fireworks.at(-1).trigger(width * 0.40, height * 0.80);
   break;
   
-    case "https://abc.edu.sg/":
+    case "https://www.abc.edu.sg/":
       console.log("abc");
       qr7Scanned = true;
       fireworks.push(new Firework());
       fireworks.at(-1).trigger(width * 0.60, height * 0.80);
   break;
   
-    case "https://123.edu.sg/":
+    case "https://www.123.edu.sg/":
       console.log("123");
       qr8Scanned = true;
       fireworks.push(new Firework());
