@@ -1,4 +1,4 @@
-let qr1, qr2, qr3, qr4, qr5, qr6, qr7, qr8, qr_Correct;
+let qr1, qr2, qr3, qr4, qr5, qr6, qr7, qr8, qr_Correct, qr_Reset;
 let counter = 0
 let qr1Scanned = false,
     qr2Scanned = false,
@@ -24,6 +24,7 @@ function preload() {
   qr7 = loadImage("qr_7.2.png");
   qr8 = loadImage("qr_8.2.png");
   qr_Correct = loadImage("qr_Correct.png");
+  qr_Reset = loadImage("qr_Reset.png");
 }
 
 function setup() {
@@ -138,6 +139,18 @@ function codeScanned(text) {
       qr8Scanned = true;
       fireworks.push(new Firework());
       fireworks.at(-1).trigger(width * 0.80, height * 0.80);
+  break;
+
+    case "Reset":
+      console.log("reset");
+      qr1Scanned = false;
+      qr2Scanned = false;
+      qr3Scanned = false;
+      qr4Scanned = false;
+      qr5Scanned = false;
+      qr6Scanned = false;
+      qr7Scanned = false;
+      qr8Scanned = false;
   break;
   }
 }
